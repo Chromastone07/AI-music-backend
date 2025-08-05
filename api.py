@@ -16,7 +16,10 @@ import generate
 
 app = FastAPI()
 
-origins = ["http://localhost:5173"]
+origins = [
+    "http://localhost:5173", # For local testing
+    "https://your-project-name.netlify.app" # For the live website
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
