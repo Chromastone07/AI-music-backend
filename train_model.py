@@ -16,6 +16,8 @@ class StopTrainingCallback(Callback):
             self.model.stop_training = True
             print(f"\nTraining for job {self.job_id} stopped by user.")
 
+# In train_model.py
+
 def create_network(input_data, n_vocab):
     """Creates the structure of the neural network."""
     sequence_length = input_data.shape[1]
