@@ -9,7 +9,10 @@ import train_model
 
 app = FastAPI()
 
-origins = ["http://localhost:5173"]
+origins = [
+    "http://localhost:5173", 
+    "ai-music-api.netlify.app" 
+]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
