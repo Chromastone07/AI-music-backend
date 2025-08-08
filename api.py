@@ -34,7 +34,7 @@ n_vocab = data['n_vocab']
 dummy_input = np.random.rand(1, 30, 1) 
 model = train_model.create_network(dummy_input, n_vocab)
 model.load_weights("final_model_weights.weights.h5")
-print("✅ Model and data loaded successfully.")
+print(" Model and data loaded successfully.")
 
 
 @app.get("/generate")
